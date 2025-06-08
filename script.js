@@ -41,7 +41,9 @@ function playRound(computerChoice, humanChoice){
         console.log("Play Again");
         playRound(getComputerChoice(), getHumanChoice);
     }else{
+        computerScore += 1;
         console.log("You Lose, " + computerChoice + " beats " + humanChoice);
+        console.log("Score: YOU: " + humanScore + " AI: " + computerScore);
     }
 }
 
