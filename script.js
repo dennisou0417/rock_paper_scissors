@@ -1,9 +1,13 @@
 function getComputerChoice(){
     let choice = Math.ceil(Math.random()*3);
 
-    console.log(choice);
-
-    return choice;
+    if(choice === 1){
+        return console.log("Rock");
+    }else if(choice === 2){
+        return console.log("Paper");
+    }else{
+        return console.log("Scissors");
+    }
 }
 
 getComputerChoice();
@@ -16,8 +20,12 @@ function getHumanChoice(){
     return choice;
 }
 
-getHumanChoice();
-
 let humanScore = 0;
 let computerScore = 0;
 
+function playRound(computerChoice, humanChoice){
+    humanChoice = getHumanChoice().toLowerCase();
+    console.log(humanChoice);
+}
+
+playRound();
