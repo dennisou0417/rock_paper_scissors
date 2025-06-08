@@ -7,3 +7,17 @@ function getComputerChoice(){
 }
 
 getComputerChoice();
+
+function getHumanChoice(){
+    let choice = prompt("Rock Paper or Scissors");
+
+    console.log(choice);
+
+    return choice;
+}
+
+getHumanChoice();
+
+let humanScore = 0;
+let computerScore = 0;
+
